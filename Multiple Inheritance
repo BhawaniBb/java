@@ -1,0 +1,25 @@
+class ClassA {
+     void classA(){
+        System.out.println("Class A");
+    }
+}
+class ClassB extends ClassA{
+     void classB(){
+        System.out.println("Class B");
+    }
+}
+class ClassC extends ClassA{
+    void classC(){
+        System.out.println("class C");
+}
+}
+class Main {
+      public static void main (String[] args) {
+         ClassC c = new ClassC();
+         ClassB b = new ClassB();
+         c.classA();
+         b.classB();
+         c.classC();
+         b.classA();
+     }
+    }
